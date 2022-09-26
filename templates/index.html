@@ -1,7 +1,4 @@
-{% block scripts %}
-{{ super() }}
-{{ moment.include_moment() }}
-{% endblock %}
+{% extends "base.html" %}
 
 <h1>Hello World!</h1>
 <p>the local date and time is {{ moment(current_time).format('LLL') }}.</p>

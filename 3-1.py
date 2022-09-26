@@ -16,3 +16,6 @@ def index():
 def user(name):
     return render_template('user.html',name=name,current_time=datetime.utcnow())
 
+@app.route('/invalid')
+def invalid():
+    return render_template('404.html')

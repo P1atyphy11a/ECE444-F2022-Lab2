@@ -5,8 +5,8 @@ This repo is a clone of https://github.com/miguelgrinberg/flasky
 ![ACT2](https://user-images.githubusercontent.com/37389868/192411348-af80cde5-e7b4-4671-b902-fe62099a437b.png)
 # Act 3
 ![Act3](https://user-images.githubusercontent.com/37389868/192411363-b3cb0259-8d1a-42fd-a141-9c670a8a1775.png)
-# Act 4!
-[4-0](https://user-images.githubusercontent.com/37389868/192411427-6a7082c8-d9f0-412c-a22f-63b0e3befbf6.png)
+# Act 4
+![4-0](https://user-images.githubusercontent.com/37389868/192411427-6a7082c8-d9f0-412c-a22f-63b0e3befbf6.png)
 ![4-1](https://user-images.githubusercontent.com/37389868/192411437-64497d9a-b7ad-4903-bb49-225a153da990.png)
 ![4-2](https://user-images.githubusercontent.com/37389868/192411442-4ebaca4a-1123-4d7f-b209-35fb428fb1b2.png)
 ![4-3](https://user-images.githubusercontent.com/37389868/192411448-57d1224d-ae71-4081-b283-40021205f3d0.png)

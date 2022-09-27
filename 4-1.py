@@ -15,7 +15,7 @@ moment = Moment(app)
 
 class Form(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
-    email = StringField('What is your UofT Email address?', validators=[DataRequired(),Email(message="Please include an '@' in the email address.")])
+    email = StringField('What is your UofT Email address?', validators=[DataRequired(),Email()])
     submit = SubmitField('Submit')
 
 
@@ -49,6 +49,6 @@ def form():
         else:
             session['email'] = ''
         return redirect(url_for('form'))
-    return render_template('form.html',form=form,name=session.get('name'))
+    return render_template('form.html',form=form,name=session.get('name'),email=session.get('email'))
 
     # (not form.email.data.__contains__("@mail.utoronto.ca"))

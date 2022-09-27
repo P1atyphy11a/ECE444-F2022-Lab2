@@ -15,7 +15,7 @@ moment = Moment(app)
 
 class Form(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
-    email = StringField('What is your UofT Email address?', validators=[DataRequired(),Email(message="Please include an '@' in the email address.")])
+    # email = StringField('What is your UofT Email address?', validators=[DataRequired(),Email(message="Please include an '@' in the email address.")])
     submit = SubmitField('Submit')
 
 
@@ -38,17 +38,17 @@ def form():
     form = Form()
     if form.validate_on_submit():
         old_name = session.get('name')
-        old_email = session.get('email')
+        # old_email = session.get('email')
         if old_name is not None and old_name!= form.name.data:
             flash('Looks like you have changed your name!')
-        if old_email is not None and old_email!= form.email.data:
-            flash("Looks like you have changed your email!")
+        # if old_email is not None and old_email!= form.email.data:
+        #     flash("Looks like you have changed your email!")
         session['name'] = form.name.data
-        if form.email.data.__contains__('utoronto'):
-            session['email'] = form.email.data
-        else:
-            session['email'] = ''
+        # if form.email.data.__contains__('utoronto'):
+        #     session['email'] = form.email.data
+        # else:
+        #     session['email'] = ''
         return redirect(url_for('form'))
-    return render_template('form.html',form=form,name=session.get('name'),email=session.get('email'))
+    return render_template('form.html',form=form,name=session.get('name'))
 
     # (not form.email.data.__contains__("@mail.utoronto.ca"))
